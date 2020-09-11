@@ -33,7 +33,7 @@
      <div class="chart space">
       <h2>Gráfica</h2>
     <GChart 
-    type="AreaChart"
+    type="LineChart"
     :data="chartData"
     :options="chartOptions"
     />
