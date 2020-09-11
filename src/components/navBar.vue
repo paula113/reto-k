@@ -1,6 +1,6 @@
 <template>
 <nav>
-    <v-toolbar flatapp class='blue'>
+    <v-toolbar flatapp :color="'rgb(8, 164, 167)'">
     </v-toolbar>
       <v-navigation-drawer
       app
@@ -16,12 +16,12 @@
         >
           <v-list-item two-line :class="miniVariant && 'px-0'">
             <v-list-item-avatar>
-              <img src="https://randomuser.me/api/portraits/men/81.jpg">
+              <img src="https://randomuser.me/api/portraits/women/81.jpg">
             </v-list-item-avatar>
 
             <v-list-item-content>
-              <v-list-item-title>Application</v-list-item-title>
-              <v-list-item-subtitle>Subtext</v-list-item-subtitle>
+              <v-list-item-title>Jimena Loazo</v-list-item-title>
+              <v-list-item-subtitle>Líder de equipo</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
 
@@ -48,15 +48,18 @@
 </template>
 
 <script>
+
 // import Table from '../components/tables'
   export default {
     data () {
       return {
         drawer: true,
         items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
+          { title: 'Inicio', icon: 'mdi-home' },
+          { title: 'Seguimiento', icon: 'mdi-account-multiple' },
+          { title: 'Calendario', icon: 'mdi-calendar-month' },
+          { title: 'Notificaciones', icon: 'mdi-bell-ring' },
+          { title: 'Perfil', icon: 'mdi-account' },
         ],
         right: false,
         permanent: true,
@@ -70,3 +73,4 @@
     },
   }
 </script>
+

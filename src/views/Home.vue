@@ -1,15 +1,12 @@
 <template>
 <div>
-    <h2>HOME</h2>
     <Dashboard  :greetings="greetings" :headers="headers" :employees="employees"/>
-
 </div>
 
 </template>
 
 <script>
   import Dashboard from '../components/Dashboard'
-  // localStorage.removeItem('name')
   export default {
     name: 'Home',
     components: {
@@ -21,7 +18,7 @@
           {
             text: 'Nombre y Apellido',
             align: 'start',
-            sortable: false,
+            sortable: true,
             value: 'name',
           },
           { text: 'Estado', value: 'Estado' },

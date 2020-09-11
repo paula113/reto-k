@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
   export default {
     props: ['greetings', 'headers', 'employees'],
 
@@ -29,12 +28,13 @@
         else return 'green'
       },
       newmet (item){
-        // console.log(this.employees);
-        console.log(item.name);
+        item['KPI-4']= '75%';
+        item['KPI-5']= '290';
+        item['KPI-6']= '60%';        
+        // console.log(item.name);
         this.$router.push(`/details/${item.name}`)
-         localStorage.setItem('name', JSON.stringify(item))
-        // localStorage.setItem('name', item)
-        // this.getColor()
+         localStorage.setItem('name', JSON.stringify(item));
+         localStorage.setItem('employee', JSON.stringify(item.name));
       }
     },
   }

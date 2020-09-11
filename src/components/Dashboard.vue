@@ -20,6 +20,7 @@ import Results from './Results'
     methods: {
       test(arg){
         console.log(arg);
+        
       }
 },
     // data: () => ({
