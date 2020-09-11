@@ -10,7 +10,7 @@
     <span>Regresar</span>
     </div>
    
-    <div class="employee-name">
+    <div class="employee-name-D">
       <h1>Asesor: {{nameUser}}</h1>
     </div>
     <section class="space">
@@ -22,7 +22,7 @@
       <span class="dot yellow"></span>
       <label for="" class="text">Neutro</label>
       <span class="dot red"></span>
-      <label for="" class="text">Fuero del objetivo</label>
+      <label for="" class="text">Fuera del objetivo</label>
     </div>
     </section>
     
@@ -110,9 +110,10 @@ export default {
 .options{
   display: flex;
   flex-direction: row;
+  /* background-color: blueviolet; */
   margin: 5px;
 }
-.employee-name{
+.employee-name-D{
   background-color: rgb(255, 255, 255);
   box-shadow:  3px 2.8px 2.2px rgba(0, 0, 0, 0.034);
   border: solid 3px whitesmoke;

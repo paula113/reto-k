@@ -55,6 +55,20 @@
             'KPI-2': 220,
             'KPI-3': '84%',
           },
+          {
+            name: 'Anais Lamas',
+            Estado: 459,
+            'KPI-1': '75%',
+            'KPI-2': 280,
+            'KPI-3': '60%',
+          },
+          {
+            name: 'Alejandro Villegas',
+            Estado: 159,
+            'KPI-1': '80%',
+            'KPI-2': 220,
+            'KPI-3': '84%',
+          },
         ],
       })
   }
