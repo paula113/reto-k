@@ -1,7 +1,7 @@
 <template>
 <div>
-    <h2>HOMA Page</h2>
-    <Dashboard />
+    <h2>HOME</h2>
+    <Dashboard  :greetings="greetings" :headers="headers" :employees="employees"/>
 
 </div>
 
@@ -9,11 +9,56 @@
 
 <script>
   import Dashboard from '../components/Dashboard'
-
+  // localStorage.removeItem('name')
   export default {
     name: 'Home',
     components: {
           Dashboard,
       },
+      data: ()=>({
+        greetings: 'Hi from parent HOME to Dashboard',
+         headers: [
+          {
+            text: 'Nombre y Apellido',
+            align: 'start',
+            sortable: false,
+            value: 'name',
+          },
+          { text: 'Estado', value: 'Estado' },
+          { text: 'KPI-1', value: 'KPI-1' },
+          { text: 'KPI-2', value: 'KPI-2'},
+          { text: 'KPI-3', value: 'KPI-3' },
+        ],
+        employees: [
+          {
+            name: 'Juan Fajardo',
+            Estado: 459,
+            'KPI-1': '75%',
+            'KPI-2': 280,
+            'KPI-3': '60%',
+          },
+           {
+            name: 'Jorge Valentin',
+            Estado: 259,
+            'KPI-1': '75%',
+            'KPI-2': 280,
+            'KPI-3': '70%',
+          },
+           {
+            name: 'Ybed Delgado',
+            Estado: 109,
+            'KPI-1': '82%',
+            'KPI-2': 280,
+            'KPI-3': '87%',
+          },
+           {
+            name: 'Joshua Amao',
+            Estado: 159,
+            'KPI-1': '80%',
+            'KPI-2': 220,
+            'KPI-3': '84%',
+          },
+        ],
+      })
   }
 </script>

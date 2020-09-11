@@ -1,9 +1,8 @@
 <template>
   <v-data-table
     :headers="headers"
-    :items="employees"
+    :items="employee"
     class="elevation-1"
-    @click:row="newmet"
   >
   <!-- <h1 content='mi prop'>hola</h1> -->
     <template v-slot:[`item.Estado`]="{ item }">
@@ -15,7 +14,7 @@
 <script>
 
   export default {
-    props: ['greetings', 'headers', 'employees'],
+    props: ['headers', 'employee'],
 
     data () {
       return {
@@ -28,13 +27,8 @@
         else if (Estado > 200) return 'yellow'
         else return 'green'
       },
-      newmet (item){
-        // console.log(this.employees);
-        console.log(item.name);
-        this.$router.push(`/details/${item.name}`)
-         localStorage.setItem('name', JSON.stringify(item))
-        // localStorage.setItem('name', item)
-        // this.getColor()
+      newmet (){
+       console.log('jjjjj');
       }
     },
   }

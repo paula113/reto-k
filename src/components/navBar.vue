@@ -2,11 +2,6 @@
 <nav>
     <v-toolbar flatapp class='blue'>
     </v-toolbar>
-    <!-- <v-card
-      height="100vh"
-      max-width= '20%'
-      class="overflow-hidden"
-    > -->
       <v-navigation-drawer
       app
         v-model="drawer"
